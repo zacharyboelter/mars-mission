@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Show Page</title>
+</head>
+<style>
+    body {
+        background-color: rgb(190, 202, 216);
+        text-align: center;
+    }
+
+    img {
+        width: 500px;
+    }
+</style>
+
+<body>
+    <h1>Mars Missions</h1>
+    <%= mars.operator; %>'s <%= mars.name;%>
+            <%=mars.missionType%>
+                <br>
+                Date: <%= mars.launchDate;%>
+                    <br>
+                    <img src="<%= mars.img;%>">
+                    <br>
+
+                    <a href="/mars">Back to Index</a>
+</body>
+
+</html>
+
+
+
+<!-- {
+        name: "Curiosity",
+        launchDate: "26 Nov 2011",
+        operator: "NASA",
+        missionType: "Rover",
+        img: "https://www.nasa.gov/sites/default/files/styles/full_width_feature/public/thumbnails/image/pia19808-main_tight_crop-monday.jpg"
+    }, -->
